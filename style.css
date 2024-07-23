@@ -1,0 +1,443 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #f39c12;
+}
+
+header .bx-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar li {
+    margin-left: 1rem;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+header .navbar a:hover {
+    background: #f39c12;
+    border-radius: 5px;
+}
+
+header .top-btn .nav-btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .top-btn .nav-btn:hover {
+    background: #e67e22;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    background: url('12.jpg') no-repeat center center/cover;
+    color: #467be4;
+    text-align: center; /* Center text for the entire .home section */
+}
+
+.home-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the .home-content block horizontally */
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center; /* Center h1 text */
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center; /* Center h3 text */
+}
+
+.home-content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: center; /* Center paragraph text */
+}
+
+.home-content .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Make sure the button is centered */
+    margin-top: 1rem; /* Add some space above the button */
+}
+
+.home-content .btn:hover {
+    background: #e67e22;
+}
+
+.home-img {
+    flex: 1; /* Allow image to take up available space */
+    display: flex; /* Use flexbox for vertical and horizontal centering */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.home-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Services Section */
+.services {
+    padding: 5rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.services .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services .heading span {
+    color: #f39c12;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-content .row {
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.services-content .row img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.services-content .row h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+}
+
+.about-img {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content .heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.about-content .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-content .btn:hover {
+    background: #e67e22;
+}
+
+/* Pricing Section */
+.plans {
+    padding: 5rem 2rem;
+}
+
+.plans .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.plans .heading span {
+    color: #f39c12;
+}
+
+.plans-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans-content .box {
+    flex: 1;
+    margin: 0 1rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.plans-content .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.plans-content .box h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.plans-content .box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plans-content .box ul li {
+    margin: 0.5rem 0;
+}
+
+.plans-content .box a {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.plans-content .box a:hover {
+    background: #e67e22;
+}
+
+/* Review Section */
+.review {
+    padding: 5rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.review-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.review-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-item h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.review-item .rating {
+    margin: 0.5rem 0;
+}
+
+.review-item .rating i {
+    color: #f39c12;
+}
+/* Contact Section */
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.contact .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact .heading span {
+    color: #f39c12;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 600px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    margin-right: 0.5rem;
+    color: #f39c12;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .social {
+    margin-bottom: 1rem;
+}
+
+.footer .social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.footer .social a:hover {
+    color: #f39c12;
+}
+
+.footer .copyright {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header .navbar.active {
+        display: flex;
+    }
+
+    header .navbar li {
+        margin: 0;
+    }
+
+    header .navbar a {
+        padding: 1rem;
+        display: block;
+    }
+
+    header .top-btn {
+        display: none;
+    }
+
+    .home, .about, .services, .plans, .review {
+        padding: 2rem 1rem;
+    }
+
+    .plans-content {
+        flex-direction: column;
+    }
+
+    .plans-content .box {
+        margin-bottom: 1rem;
+    }
+}
